@@ -5,7 +5,7 @@ a {
   color: #000000;
 }
 .loading {
-  background: #ffd600 url("./img/boot_gps.png") center center no-repeat;
+  background: #ffd600 url("../img/boot_gps.png") center center no-repeat;
   background-size: 0.9444rem;
   position: absolute;
   left: 0;

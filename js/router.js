@@ -54,10 +54,10 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
         let $li = $(".public_footer li"),
             $id2 = $("#2");
         $id2.attr("id", "1");
-        $($id2[0].firstElementChild).css("background-image", "url('../public/img/" + $($id2[0].firstElementChild).attr("href").slice(1) + ".png')");
+        $($id2[0].firstElementChild).css("background-image", "url('./img/" + $($id2[0].firstElementChild).attr("href").slice(1) + ".png')");
         $.each($li.children(), function (key, value) {
             if ($(value).attr("href").slice(1) === name) {
-                $(value).css("background-image", "url('../public/img/" + name + "2.png')");
+                $(value).css("background-image", "url('./img/" + name + "2.png')");
                 $(value.parentNode).attr("id", "2");
             }
         });
