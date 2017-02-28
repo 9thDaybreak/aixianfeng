@@ -11,14 +11,14 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
         },
         home: function () {
             // 导入 HTML 及 JS
-            require(["text!../../home/home.html", "../home/js/home.js"], function (html, obj) {
+            require(["text!../home/home.html", "./home/js/home.js"], function (html, obj) {
                 $("#main").html(html);
                 obj.reqData();
             });
         },
         foudre: function () {
             //"../foudre/js/foudre.js"
-            require(["text!../../foudre/foudre.html"], function (html, obj) {
+            require(["text!../foudre/foudre.html"], function (html, obj) {
                 $("#main").html(html);
             });
         },
