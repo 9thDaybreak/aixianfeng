@@ -1,0 +1,103 @@
+body {
+  font: 16px/1.5 "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif, 'Microsoft Yahei', Simsun;
+}
+
+a {
+  color: #000000;
+}
+
+.loading {
+  background: #ffd600 url("../img/boot_gps.png") center center no-repeat;
+  background-size: 0.9444rem;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  //display: flex;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.loading > img {
+  width: 50%;
+  position: relative;
+  top: 30%;
+}
+
+.loading > p {
+  text-align: center;
+  position: relative;
+  top: 40%;
+}
+
+.public_footer {
+  height: 1.5625rem;
+  width: 100%;
+  background-color: rgba(247, 247, 247, 0.94);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+}
+
+.glass {
+  background: inherit;
+  filter: blur(30px);
+}
+
+.public_footer > ul {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 0 0.1875rem;
+  box-sizing: border-box;
+}
+
+.public_footer > ul > li {
+  width: 20%;
+  height: 100%;
+}
+
+.public_footer > ul > li:nth-child(1) > a {
+  background: url("../img/home2.png") center 0.2188rem no-repeat;
+  background-size: 0.6250rem;
+}
+
+.public_footer > ul > li:nth-child(2) > a {
+  background: url("../img/foudre.png") center 0.2188rem no-repeat;
+  background-size: 0.6250rem;
+}
+
+.public_footer > ul > li:nth-child(3) > a {
+  background: url("../img/order.png") center 0.2188rem no-repeat;
+  background-size: 0.6250rem;
+}
+
+.public_footer > ul > li:nth-child(4) > a {
+  background: url("../img/shop.png") center 0.2188rem no-repeat;
+  background-size: 0.6250rem;
+}
+
+.public_footer > ul > li:nth-child(5) > a {
+  background: url("../img/my.png") center 0.2188rem no-repeat;
+  background-size: 0.6250rem;
+}
+
+.public_footer > ul > li > a {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding-top: 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.public_footer > ul > li > a > span {
+  font-size: 0.3438rem;
+  color: #999999;
+}
