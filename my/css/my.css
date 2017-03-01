@@ -1,0 +1,229 @@
+#main {
+    background-color: #efefef;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 1.5625rem;
+}
+
+/*头部*/
+.myHeader {
+    width: 100%;
+    height: 3.1250rem;
+    background-color: #ffd600;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.myHeader .men {
+    width: 1.8750rem;
+    height: 1.8750rem;
+}
+
+.myHeader .men img {
+    width: 100%;
+    height: 100%;
+}
+
+.myHeader .phone {
+    width: 60%;
+    height: auto;
+}
+
+.myHeader .num {
+    color: #fff;
+    font-size: 0.4444rem;
+    padding-bottom: 0.2778rem;
+    padding-left: 0.1111rem;
+}
+
+.myHeader .login {
+    width: 2.7344rem;
+    height: 1rem;
+    color: #e64f1a;
+    background: url("../../public/img/logon.png") no-repeat;
+    background-size: 100%;
+    line-height: 1rem;
+    text-align: center;
+    padding-left: 0.5556rem;
+    font-size: 0.3125rem;
+    font-weight: bold;
+}
+
+.myHeader .back {
+    width: 0.4063rem;
+    height: 0.6719rem;
+    background: url("../../public/img/right2.png") no-repeat;
+    background-size: 100%;
+}
+
+/*收藏页面*/
+.myCollect {
+    width: 100%;
+    height: 1.0938rem;
+    background-color: #f3c800;
+    display: flex;
+    padding: 6px 0;
+    line-height: 0.9rem;
+    box-sizing: border-box;
+    margin-bottom: 0.2813rem;
+}
+
+.myCollect p {
+    width: 50%;
+    height: 100%;
+    display: inline-block;
+    text-align: center;
+}
+
+.myCollect .left span {
+    display: inline-block;
+    width: 0.5938rem;
+    height: 0.6406rem;
+    background: url("../../public/img/收藏_03.png") no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+}
+
+.myCollect .right span {
+    display: inline-block;
+    width: 0.5938rem;
+    height: 0.6406rem;
+    background: url("../../public/img/收藏_06.png") no-repeat;
+    background-size: 100%;
+    vertical-align: middle;
+    background-position: 0 0.1111rem;
+}
+
+.myCollect a {
+    color: #fff;
+    font-size: 0.4444rem;
+    padding-left: 0.2778rem;
+    vertical-align: middle;
+}
+
+.myCollect .left {
+    border-right: 1px solid #eee;
+}
+
+/*等待区*/
+.contentTop {
+    width: 100%;
+    height: 2.2344rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+
+.contentTop figure {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentTop figcaption {
+    font-size: 0.3750rem;
+}
+
+.contentTop img {
+    width: 0.5625rem;
+    height: 0.5625rem;
+    margin-bottom: 0.3125rem;
+}
+
+.contentMid {
+    margin-top: 0.3125rem;
+    width: 100%;
+    height: 3.1250rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    border-bottom: 2px solid #efefef;
+}
+
+.contentMid figure {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentMid img {
+    width: 0.5625rem;
+    height: 0.5625rem;
+    margin-bottom: 0.3125rem;
+}
+
+.contentMid figcaption {
+    font-size: 0.3750rem;
+}
+
+.contentBottom {
+    width: 100%;
+    height: 3.1250rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #fff;
+}
+
+.contentBottom figure {
+    width: 25%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contentBottom img {
+    width: 0.5625rem;
+    height: 0.5625rem;
+    margin-bottom: 0.3125rem;
+}
+
+.contentBottom figcaption {
+    font-size: 0.3750rem;
+}
+
+.indent {
+    width: 10rem;
+    height: 1.5313rem;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 0.4688rem;
+    box-sizing: border-box;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.indent span {
+    font-size: 0.4063rem;
+    color: #333333;
+}
+
+.indent p {
+    font-size: 0.4063rem;
+    color: #9a9a9a;
+}
+
+.indent p img {
+    height: 0.3125rem;
+    width: auto;
+}

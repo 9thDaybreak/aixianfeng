@@ -34,8 +34,8 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
             });
         },
         my: function () {
-            require([], function (html) {
-                $("#main").html("my");
+            require(["text!../../my/my.html"], function (html) {
+                $("#main").html(html);
             });
         },
         defAction: function () {

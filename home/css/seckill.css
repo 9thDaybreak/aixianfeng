@@ -1,0 +1,26 @@
+
+.header {
+    height: 1.4063rem;
+    width: 10rem;
+    background-color: #f9fafd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.header > p {
+    font-weight: bold;
+    font-size: 0.4063rem;
+}
+
+.share {
+    width: 10rem;
+    height: 4.3438rem;
+    background: url("../../public/img/share.png");
+    background-size: contain;
+}
