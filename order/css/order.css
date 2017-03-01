@@ -40,6 +40,7 @@ body {
     width: 10rem;
     max-width: 10rem;
     background-color: #ffffff;
+    padding-bottom: 1.5625rem;
 }
 
 .channel {
@@ -113,11 +114,12 @@ body {
     padding-left: 0.7500rem;
     display: flex;
     position: relative;
+    box-sizing: border-box;
 }
 
 .section_img {
-    width: 3.5000rem;
-    height: 3.5000rem;
+    width: 3.4375rem;
+    height: 3.4375rem;
 }
 
 .section_img img {
