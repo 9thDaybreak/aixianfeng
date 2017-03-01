@@ -75,8 +75,8 @@ body {
     height: 100%;
 }
 
-.red {
-    background-color: red;
+.swiper-slide {
+    background-size: contain;
 }
 
 .swiper-pagination {
@@ -368,7 +368,7 @@ body {
 
 .listTotal {
     height: 6.2812rem;
-    padding: 0.3125rem;
+    padding: 0.3125rem 0.1rem;
     box-sizing: border-box;
     display: flex;
 }
@@ -380,8 +380,13 @@ body {
     text-align: center;
     display: flex;
     flex-direction: column;
-    padding-top: 0.3906rem;
+    padding-top: 0.1rem;
     box-sizing: border-box;
+}
+
+.listTotalImg img {
+    height: auto;
+    width: 100%;
 }
 
 .listTotal figure:nth-child(1) {
@@ -391,7 +396,6 @@ body {
 .listTotalDetail {
     position: relative;
     left: -0.3rem;
-    top: 0.3rem;
 }
 
 .listTotalDetail p:nth-child(1) {
@@ -450,6 +454,6 @@ body {
     font-size: 0.3750rem;
     font-weight: 900;
     position: absolute;
-    top: -0.3rem;
-    right: -0.2rem;
+    top: -0.5rem;
+    right: -0.3rem;
 }
