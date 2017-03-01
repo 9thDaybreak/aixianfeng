@@ -58,8 +58,7 @@ body {
     bottom: 0;
     overflow: scroll;
     width: 10rem;
-    max-width: 640px;
-    min-width: 320px;
+    max-width: 10rem;
     padding-bottom: 1.5625rem;
     background-color: #efefef;
 }
