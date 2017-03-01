@@ -17,9 +17,9 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
             });
         },
         foudre: function () {
-            //"../foudre/js/foudre.js"
-            require(["text!../../foudre/foudre.html"], function (html, obj) {
+            require(["text!../../foudre/foudre.html", "./foudre/js/foudre.js"], function (html, obj) {
                 $("#main").html(html);
+                obj.reqData();
             });
         },
         order: function () {

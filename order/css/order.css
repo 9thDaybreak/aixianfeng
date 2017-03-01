@@ -1,0 +1,59 @@
+body {
+    font: 16px/1.5 "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif, 'Microsoft Yahei', Simsun;
+    max-width: 10rem;
+    margin: 0 auto;
+}
+
+.public_header {
+    height: 1.4375rem;
+    width: 100%;
+    background-color: #ffd600;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+.public_header > div {
+    height: 100%;
+    box-sizing: border-box;
+    padding: 0.9375rem 0.2rem 0;
+    font-size: 0.25rem;
+}
+
+.header_search {
+    background: url("../../public/img/header_search.png") center 0.25rem no-repeat;
+    background-size: 0.6250rem;
+}
+
+.public_header > p {
+    font-weight: 400;
+    font-size: 0.4063rem;
+    position: relative;
+}
+
+.public_header > p:after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-color: #000000 transparent transparent transparent;
+    border-width: 0.2813rem 0.1250rem;
+    border-style: solid;
+    position: absolute;
+    top: 0.2rem;
+    right: -0.3125rem;
+}
+
+.main {
+    position: absolute;
+    top: 1.4375rem;
+    bottom: 0;
+    overflow: scroll;
+    width: 10rem;
+    max-width: 10rem;
+    background-color: #efefef;
+    display: flex;
+}
