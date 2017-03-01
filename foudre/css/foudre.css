@@ -190,6 +190,14 @@ body {
     font-size: 0.375rem;
     color: #232b33;
     padding-bottom: .1rem;
+    /*规定段落中的文本不进行换行：*/
+    white-space: nowrap;
+    /*text-overflow: ellipsis文字超出时显示...*/
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    /*超出部分隐藏,否则无效*/
+    overflow: hidden;
 }
 
 .p_desc {

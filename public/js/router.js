@@ -23,8 +23,9 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
             });
         },
         order: function () {
-            require([], function (html) {
-                $("#main").html("order");
+            require(["text!../../order/order.html", "./order/js/order.js"], function (html, obj) {
+                $("#main").html(html);
+                obj.reqData();
             });
         },
         shop: function () {

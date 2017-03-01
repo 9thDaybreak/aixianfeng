@@ -57,6 +57,7 @@ body {
     top: 1.4375rem;
     bottom: 0;
     overflow: scroll;
+    -webkit-overflow-scrolling: touch;
     width: 10rem;
     max-width: 10rem;
     padding-bottom: 1.5625rem;
@@ -178,6 +179,17 @@ body {
     padding-left: 18%;
     display: flex;
     align-items: center;
+}
+
+.headline_content ul li {
+    /*规定段落中的文本不进行换行：*/
+    white-space: nowrap;
+    /*text-overflow: ellipsis文字超出时显示...*/
+    -ms-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    /*超出部分隐藏,否则无效*/
+    overflow: hidden;
 }
 
 .headline_content a {
