@@ -3,18 +3,17 @@ define(["jquery", "swiper"], function ($) {
     obj.reqData = function () {
         $.ajax({
             type: "GET",
-            url: "http://h5.yztctech.net/api/axf/apihome.php",
+            url: "./lib/json/apihome.json",
             async: true,
             success: function (req) {
-                let JSONReq = JSON.parse(req),
-                    $warpper = $(".swiper-wrapper"),
+                let $warpper = $(".swiper-wrapper"),
                     $channelUl = $(".channel ul"),
                     // 轮播图
                     fragmentBanner = document.createDocumentFragment(),
                     // 菜单
                     fragmentChannel = document.createDocumentFragment();
                 // 处理轮播图数据
-                JSONReq.data["slide"].map(function (element, index) {
+                req.data["slide"].map(function (element, index) {
                     let $li = $("<div class='swiper-slide'></div>").css("background-image", "url('" + element["activity"]["img"] + "')");
                     $(fragmentBanner).append($li);
                 });
@@ -28,7 +27,7 @@ define(["jquery", "swiper"], function ($) {
                 });
 
                 // 处理菜单数据
-                JSONReq.data["menu"].map(function (element, index) {
+                req.data["menu"].map(function (element, index) {
                     let $li = $("<li><a href='javascript:void(0);' style='background-image: url(" + element["activity"]["img"] + ")'>" + element["activity"]["name"] + "</a></li>");
                     $(fragmentChannel).append($li);
                 });
