@@ -66,9 +66,9 @@ body {
     width: 1.6252rem;
     font-size: 0.3438rem;
     color: #a7a7a7;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
+    box-sizing: border-box;
+    line-height: 1.0703rem;
 }
 
 .channelChoice.channelChoice {
