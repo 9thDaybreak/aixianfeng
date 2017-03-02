@@ -1,6 +1,7 @@
 define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
     // 设置路由
     let setting = backbone.Router.extend({
+        $main: $("#main"),
         routes: {
             "home": "home",
             "foudre": "foudre",
@@ -11,22 +12,30 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
         },
         home: function () {
             // 导入 HTML 及 JS
-            require(["text!../../home/home.html", "./home/js/home.js"], function (html, obj) {
-                $("#main").html(html);
+            let self = this;
+            require(["text!../../home/home.html", "text!../../home/css/home.css", "./home/js/home.js"], function (html, css, obj) {
+                self.$main.html("<style>" + css + "</style>");
+                self.$main.append(html);
                 obj.reqData();
             });
         },
         foudre: function () {
-            require(["text!../../foudre/foudre.html", "./foudre/js/foudre.js"], function (html, obj) {
-                $("#main").html(html);
+            let self = this;
+            require(["text!../../foudre/foudre.html", "text!../../foudre/css/foudre.css", "./foudre/js/foudre.js"], function (html, css, obj) {
+                self.$main.html("<style>" + css + "</style>");
+                self.$main.append(html);
                 obj.reqData();
             });
         },
         order: function () {
-            require(["text!../../order/order.html", "./order/js/order.js"], function (html, obj) {
-                $("#main").html(html);
-                obj.reqData();
-            });
+            let self = this;
+            require(["text!../../order/order.html", "text!../../order/css/order.css", "./order/js/order.js"], function (html, css, obj) {
+                    self.$main.html("<style>" + css + "</style>");
+                    self.$main.append(html);
+                    obj.reqData();
+                }
+            )
+            ;
         },
         shop: function () {
             require([], function (html) {
@@ -34,8 +43,10 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
             });
         },
         my: function () {
-            require(["text!../../my/my.html"], function (html) {
-                $("#main").html(html);
+            let self = this;
+            require(["text!../../my/my.html", "text!../../my/css/my.css"], function (html, css) {
+                self.$main.html("<style>" + css + "</style>");
+                self.$main.append(html);
             });
         },
         defAction: function () {
