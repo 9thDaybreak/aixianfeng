@@ -1,20 +1,29 @@
 body {
     margin: 0 auto;
     font-family: 微软雅黑;
+    display: flex;
+    justify-content: center;
 }
 
 .header {
     height: 1.4063rem;
-    width: 10rem;
+    width: 100%;
     background-color: #f9fafd;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
     border-bottom: 2px solid #e0e0e0;
+    box-sizing: border-box;
+    padding: 0 .1rem;
+}
+
+.header img {
+    width: 0.6250rem;
+    height: 0.6250rem;
 }
 
 .header > p {
@@ -60,9 +69,6 @@ body {
     background: #fdd000;
 }
 
-.active_section:last-child img {
-}
-
 .active_section:last-child p {
     color: #303328;
 }
@@ -71,6 +77,11 @@ body {
     font-size: 0.3750rem;
     color: #ffffff;
     margin: 0.1563rem 0;
+}
+
+.active_section p img {
+    width: 0.5469rem;
+    height: 0.5469rem;
 }
 
 .active_over {
@@ -195,4 +206,9 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.false.false.false {
+    color: #000000;
+    background-color: #cccccc;
 }

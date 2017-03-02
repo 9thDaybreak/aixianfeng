@@ -1,0 +1,240 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "苏菲极薄0.1卫生巾",
+      "specifics": "8片",
+      "market_price": "16.5",
+      "price": "5.9",
+      "number": "45",
+      "img": "http://img01.bqstatic.com/upload/goods/201/609/2313/20160923134218_279089.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "即将开抢"
+    },
+    {
+      "id": 2,
+      "name": "维达超韧纸抽",
+      "specifics": "3包/提",
+      "market_price": "18",
+      "price": "6.9",
+      "number": "0",
+      "img": "http://img01.bqstatic.com/upload/goods/201/609/2313/20160923134039_305852.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "即将开抢"
+    },
+    {
+      "id": 3,
+      "name": "统一香辣味老坛酸菜",
+      "specifics": "120g/桶*2",
+      "market_price": "10",
+      "price": "4.9",
+      "number": "57",
+      "img": "http://img01.bqstatic.com/upload/goods/201/609/2318/20160923182453_647553.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "即将开抢"
+    },
+    {
+      "id": 4,
+      "name": "金锣肉粒多猪肉香肠",
+      "specifics": "320g/袋",
+      "market_price": "13.5",
+      "price": "6.9",
+      "number": "0",
+      "img": "http://img01.bqstatic.com/upload/goods/201/609/2313/20160923133501_753538.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "即将开抢"
+    },
+    {
+      "id": 5,
+      "name": "梅林午餐肉罐头",
+      "specifics": "340g",
+      "market_price": "14.9",
+      "price": "7.9",
+      "number": "11",
+      "img": "http://img01.bqstatic.com/upload/goods/201/609/2311/20160923114740_971295.jpg@355w_355h_90Q",
+      "enable": true,
+      "btnText": "7.9元抢购"
+    },
+    {
+      "id": 6,
+      "name": "好丽友薯愿薯片三连包",
+      "specifics": "104g*3/包",
+      "market_price": "23.9",
+      "price": "12.9",
+      "number": "22",
+      "img": "http://img01.bqstatic.com/upload/goods/201/609/2311/20160923114847_954423.jpg@355w_355h_90Q",
+      "enable": true,
+      "btnText": "12.9元抢购"
+    },
+    {
+      "id": 7,
+      "name": "爱鲜蜂·百香果",
+      "specifics": "120g 2粒/袋",
+      "market_price": "19",
+      "price": "6.9",
+      "number": "6",
+      "img": "http://img01.bqstatic.com/upload/goods/201/609/2311/20160923114603_195269.jpg@355w_355h_90Q",
+      "app_mimg": "http://img01.bqstatic.com/upload/goods/201/609/2311/20160923114603_195269.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    },
+    {
+      "id": 8,
+      "name": "今时代八角杯果粒酸奶",
+      "specifics": "200g*2",
+      "market_price": "15.8",
+      "price": "8.6",
+      "number": "1",
+      "img": "http://img01.bqstatic.com/upload/goods/201/609/2317/20160923173403_441876.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    },
+    {
+      "id": 9,
+      "name": "爱鲜蜂·凯特芒果",
+      "specifics": "450-600g/盒",
+      "market_price": "21",
+      "price": "14.6",
+      "number": "1",
+      "img": "http://img01.bqstatic.com/upload/goods/201/607/1817/20160718171026_207686.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    },
+    {
+      "id": 10,
+      "name": "红牛维生素功能饮料",
+      "specifics": "250ml",
+      "market_price": "6.5",
+      "price": "6",
+      "number": "84",
+      "img": "http://img01.bqstatic.com/upload/goods/000/000/2201/0000002201_31880.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    },
+    {
+      "id": 11,
+      "name": "红牛维生素功能饮料",
+      "specifics": "250ml",
+      "market_price": "6.5",
+      "price": "6",
+      "number": "84",
+      "img": "http://img01.bqstatic.com/upload/goods/000/000/2201/0000002201_31880.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    },
+    {
+      "id": 12,
+      "name": "爱鲜蜂·百香果",
+      "specifics": "120g 2粒/袋",
+      "market_price": "19",
+      "price": "6.9",
+      "number": "6",
+      "img": "http://img01.bqstatic.com/upload/goods/201/609/2311/20160923114603_195269.jpg@355w_355h_90Q",
+      "app_mimg": "http://img01.bqstatic.com/upload/goods/201/609/2311/20160923114603_195269.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    },
+    {
+      "id": 13,
+      "name": "今时代八角杯果粒酸奶",
+      "specifics": "200g*2",
+      "market_price": "15.8",
+      "price": "8.6",
+      "number": "1",
+      "img": "http://img01.bqstatic.com/upload/goods/201/609/2317/20160923173403_441876.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    },
+    {
+      "id": 14,
+      "name": "爱鲜蜂·凯特芒果",
+      "specifics": "450-600g/盒",
+      "market_price": "21",
+      "price": "14.6",
+      "number": "1",
+      "img": "http://img01.bqstatic.com/upload/goods/201/607/1817/20160718171026_207686.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    },
+    {
+      "id": 15,
+      "name": "红牛维生素功能饮料",
+      "specifics": "250ml",
+      "market_price": "6.5",
+      "price": "6",
+      "number": "84",
+      "img": "http://img01.bqstatic.com/upload/goods/000/000/2201/0000002201_31880.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    },
+    {
+      "id": 16,
+      "name": "红牛维生素功能饮料",
+      "specifics": "250ml",
+      "market_price": "6.5",
+      "price": "6",
+      "number": "84",
+      "img": "http://img01.bqstatic.com/upload/goods/000/000/2201/0000002201_31880.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    },
+    {
+      "id": 17,
+      "name": "爱鲜蜂·百香果",
+      "specifics": "120g 2粒/袋",
+      "market_price": "19",
+      "price": "6.9",
+      "number": "6",
+      "img": "http://img01.bqstatic.com/upload/goods/201/609/2311/20160923114603_195269.jpg@355w_355h_90Q",
+      "app_mimg": "http://img01.bqstatic.com/upload/goods/201/609/2311/20160923114603_195269.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    },
+    {
+      "id": 18,
+      "name": "今时代八角杯果粒酸奶",
+      "specifics": "200g*2",
+      "market_price": "15.8",
+      "price": "8.6",
+      "number": "1",
+      "img": "http://img01.bqstatic.com/upload/goods/201/609/2317/20160923173403_441876.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    },
+    {
+      "id": 19,
+      "name": "爱鲜蜂·凯特芒果",
+      "specifics": "450-600g/盒",
+      "market_price": "21",
+      "price": "14.6",
+      "number": "1",
+      "img": "http://img01.bqstatic.com/upload/goods/201/607/1817/20160718171026_207686.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    },
+    {
+      "id": 20,
+      "name": "红牛维生素功能饮料",
+      "specifics": "250ml",
+      "market_price": "6.5",
+      "price": "6",
+      "number": "84",
+      "img": "http://img01.bqstatic.com/upload/goods/000/000/2201/0000002201_31880.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    },
+    {
+      "id": 21,
+      "name": "红牛维生素功能饮料",
+      "specifics": "250ml",
+      "market_price": "6.5",
+      "price": "6",
+      "number": "84",
+      "img": "http://img01.bqstatic.com/upload/goods/000/000/2201/0000002201_31880.jpg@355w_355h_90Q",
+      "enable": false,
+      "btnText": "已抢光"
+    }
+  ],
+  "nowTime": 1474959433,
+  "dateTime": "2016-09-27"
+}

@@ -28,7 +28,12 @@ define(["jquery", "swiper"], function ($) {
 
                 // 处理菜单数据
                 req.data["menu"].map(function (element, index) {
-                    let $li = $("<li><a href='javascript:void(0);' style='background-image: url(" + element["activity"]["img"] + ")'>" + element["activity"]["name"] + "</a></li>");
+                    let $li;
+                    if (element["activity"]["name"] === "疯狂秒杀") {
+                        $li = $("<li><a href='./home/seckill.html' style='background-image: url(" + element["activity"]["img"] + ")'>" + element["activity"]["name"] + "</a></li>");
+                    } else {
+                        $li = $("<li><a href='javascript:void(0);' style='background-image: url(" + element["activity"]["img"] + ")'>" + element["activity"]["name"] + "</a></li>");
+                    }
                     $(fragmentChannel).append($li);
                 });
                 $channelUl.append($(fragmentChannel));

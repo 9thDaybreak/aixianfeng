@@ -36,11 +36,12 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
             });
         },
         shop: function () {
-            require([], function (html) {
-                $("#main").html("shop");
+            let self = this;
+            require(["text!../../shop/shop.html", "text!../../shop/css/shop.css", "./shop/js/shop.js"], function (html, css, obj) {
+                self.$main.html("<style>" + css + "</style>");
+                self.$main.append(html);
             });
-        },
-        my: function () {
+        }, my: function () {
             let self = this;
             require(["text!../../my/my.html", "text!../../my/css/my.css"], function (html, css) {
                 self.$main.html("<style>" + css + "</style>");
@@ -49,7 +50,9 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
         },
         // 初始化
         initialize: function () {
-            window.location.hash = "home";
+            if (window.location.hash === "") {
+                window.location.hash = "home";
+            }
         }
     });
 

@@ -1,9 +1,12 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
 #main {
     background-color: #efefef;
     position: absolute;
     top: 0;
-    left: 0;
-    right: 0;
     bottom: 0;
     overflow: auto;
     -webkit-overflow-scrolling: touch;
@@ -12,7 +15,7 @@
 
 /*头部*/
 .myHeader {
-    width: 100%;
+    width: 10rem;
     height: 3.1250rem;
     background-color: #ffd600;
     display: flex;
@@ -64,7 +67,7 @@
 
 /*收藏页面*/
 .myCollect {
-    width: 100%;
+    width: 10rem;
     height: 1.0938rem;
     background-color: #f3c800;
     display: flex;
@@ -113,7 +116,7 @@
 
 /*等待区*/
 .contentTop {
-    width: 100%;
+    width: 10rem;
     height: 2.2344rem;
     display: flex;
     justify-content: space-around;
@@ -136,20 +139,36 @@
 }
 
 .contentTop img {
-    width: 0.5625rem;
-    height: 0.5625rem;
+    width: 0.7188rem;
+    height: 0.7188rem;
     margin-bottom: 0.3125rem;
 }
 
 .contentMid {
     margin-top: 0.3125rem;
-    width: 100%;
+    width: 10rem;
     height: 3.1250rem;
     display: flex;
     justify-content: space-around;
     align-items: center;
     background-color: #fff;
     border-bottom: 2px solid #efefef;
+}
+
+.contentMid a {
+    display: block;
+    width: 25%;
+    height: 100%;
+}
+
+.contentMid a figure {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .contentMid figure {
@@ -163,8 +182,8 @@
 }
 
 .contentMid img {
-    width: 0.5625rem;
-    height: 0.5625rem;
+    width: 0.7188rem;
+    height: 0.7188rem;
     margin-bottom: 0.3125rem;
 }
 
@@ -173,7 +192,7 @@
 }
 
 .contentBottom {
-    width: 100%;
+    width: 10rem;
     height: 3.1250rem;
     display: flex;
     justify-content: flex-start;
@@ -192,8 +211,8 @@
 }
 
 .contentBottom img {
-    width: 0.5625rem;
-    height: 0.5625rem;
+    width: 0.7188rem;
+    height: 0.7188rem;
     margin-bottom: 0.3125rem;
 }
 

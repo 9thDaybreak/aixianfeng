@@ -27,9 +27,9 @@ define(["jquery", "lazyload"], function ($) {
                 $article.html("");
                 $article.append($article_content);
                 $("img.lazy").lazyload({
-                    // threshold: 200,
-                    event: "click",
-                    container: $(".article_content"),
+                    threshold: 200, // 提前开始加载
+                    container: $(".article_content"),  // 对某容器中的图片实现效果
+                    placeholder: "./public/img/loding.jpg", //用图片提前占位
                 });
             }
         });

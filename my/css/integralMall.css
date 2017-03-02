@@ -1,0 +1,117 @@
+body {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    width: 100%;
+    height: 1.4063rem;
+    line-height: 1.4063rem;
+    text-align: center;
+    font-size: 0.4063rem;
+    font-weight: bold;
+    background-color: #f9fafd;
+    border-bottom: 2px solid #e0e0e0;
+    vertical-align: middle;
+}
+
+.header a {
+    float: left;
+}
+
+.header img {
+    vertical-align: middle;
+    height: 0.6250rem;
+    width: auto;
+}
+
+.main {
+    position: absolute;
+    top: 1.4063rem;
+    bottom: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+.show {
+    height: 4.9688rem;
+    width: 10rem;
+    border-bottom: 2px solid #e0e0e0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+canvas {
+    width: 4.2500rem;
+    height: 4.2500rem;
+}
+
+.explain {
+    height: 2.0625rem;
+    width: 10rem;
+    display: flex;
+    border-bottom: 0.3125rem solid #efefef;
+}
+
+.explain figure {
+    flex: 1;
+    border-right: 2px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.explain figure:last-child {
+    border: none;
+}
+
+.explain figure img {
+    width: 0.7813rem;
+    height: 0.7813rem;
+}
+
+.explain figure figcaption {
+    font-size: 0.3438rem;
+    color: #999999;
+    margin-top: 0.1563rem;
+}
+
+.details {
+    height: 4.6250rem;
+    width: 10rem;
+    display: flex;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.details figure:first-child {
+    border-right: 2px solid #e0e0e0;
+}
+
+.details figure {
+    flex: 1;
+}
+
+.details figure img {
+    width: 99%;
+    height: auto;
+    margin: .3rem 0;
+}
+
+.detailsTitle {
+    padding-left: 0.3125rem;
+}
+
+.detailsTitle p {
+    font-size: 0.3438rem;
+}
+
+.detailsTitle p:nth-child(1) {
+    color: #333333;
+    margin-bottom: 0.3125rem;
+}
+
+.detailsTitle p:nth-child(2) {
+    color: #ea6739;
+}

@@ -8,11 +8,19 @@
     <title>爱鲜蜂</title>
     <link rel="stylesheet" href="../lib/css/flexible.css">
     <script src="../lib/js/flexible.js"></script>
+    <script src="../lib/js/jquery-3.1.1.min.js"></script>
+    <script src="../lib/js/jquery.lazyload.min.js"></script>
     <link rel="stylesheet" href="./css/seckill.css">
 </head>
 <body>
 <header class="header">
+    <a href="../index.html">
+        <img src="../public/img/left.png">
+    </a>
     <p>疯狂秒杀</p>
+    <a href="">
+        <img src="../public/img/cexiao.png">
+    </a>
 </header>
 <div class="main">
     <div class="share"></div>
@@ -45,17 +53,8 @@
         </div>
         <div class="active_rules">查看活动规则</div>
     </div>
-    <ul class="active_list">
-        <li>
-            <div class="list_img"></div>
-            <div class="list_detail">
-                <p>XXX极薄XXX尴尬这什么鬼</p>
-                <p>8片</p>
-                <p><i>¥</i><span>5.9</span>/原价:16.5元</p>
-                <p>5.9元抢购</p>
-            </div>
-        </li>
-    </ul>
+    <ul class="active_list"></ul>
 </div>
+<script src="js/seckill.js"></script>
 </body>
 </html>

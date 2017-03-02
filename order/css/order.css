@@ -30,6 +30,8 @@ body {
     bottom: 0;
     right: 0;
     background-color: #eeeef0;
+    display: flex;
+    justify-content: center;
 }
 
 .main {
