@@ -30,12 +30,10 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
         order: function () {
             let self = this;
             require(["text!../../order/order.html", "text!../../order/css/order.css", "./order/js/order.js"], function (html, css, obj) {
-                    self.$main.html("<style>" + css + "</style>");
-                    self.$main.append(html);
-                    obj.reqData();
-                }
-            )
-            ;
+                self.$main.html("<style>" + css + "</style>");
+                self.$main.append(html);
+                obj.reqData();
+            });
         },
         shop: function () {
             require([], function (html) {
@@ -47,11 +45,6 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
             require(["text!../../my/my.html", "text!../../my/css/my.css"], function (html, css) {
                 self.$main.html("<style>" + css + "</style>");
                 self.$main.append(html);
-            });
-        },
-        defAction: function () {
-            require([], function (html) {
-                $("#main").html("报错!");
             });
         },
         // 初始化

@@ -25,7 +25,7 @@ body {
 }
 
 .header_search {
-    background: url("../../public/img/header_search.png") center 0.25rem no-repeat;
+    background: url("./public/img/header_search.png") center 0.25rem no-repeat;
     background-size: 0.6250rem;
 }
 

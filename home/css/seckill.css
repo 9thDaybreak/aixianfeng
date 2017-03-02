@@ -148,7 +148,51 @@ body {
 
 .list_detail {
     flex: 1;
+    padding: 0.5625rem 0 0.5625rem 0.4688rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.list_detail p:nth-child(1){
 
+.list_detail p:nth-child(1), .list_detail p:nth-child(2) {
+    font-size: 0.4375rem;
+    color: #3c3c3c;
+}
+
+.list_detail p:nth-child(1) {
+
+}
+
+.list_detail p:nth-child(2) {
+}
+
+.list_detail p:nth-child(3) {
+    font-size: 0.3750rem;
+    margin: 0.1rem 0;
+    color: #979697;
+}
+
+.list_detail p:nth-child(3) i {
+    color: #ff602c;
+    font-style: normal;
+}
+
+.list_detail p:nth-child(3) span {
+    font-size: 0.6063rem;
+    color: #ff602c;
+    font-weight: bold;
+}
+
+.list_detail p:nth-child(4) {
+    width: 3.5313rem;
+    height: 0.9375rem;
+    border-radius: 2rem;
+    font-size: 0.4375rem;
+    font-weight: bold;
+    background-color: #ff602c;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

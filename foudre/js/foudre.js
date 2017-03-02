@@ -1,4 +1,4 @@
-define(["jquery"], function ($) {
+define(["jquery", "lazyload"], function ($) {
     let obj = {};
     obj.reqData = function () {
         // 热销榜
@@ -12,7 +12,7 @@ define(["jquery"], function ($) {
                 data["data"].map(function (element) {
                     let $li = $("<li></li>"),
                         $figure = $("<figure class='article_content_list'></figure>"),
-                        $figure_div = $("<div class='article_content_list_left'><img src='" + element["img"] + "'></div>"),
+                        $figure_div = $("<div class='article_content_list_left'><img class='lazy' data-original='" + element["img"] + "' width='2.7813rem' height='2.7813rem'></div>"),
                         $figcaption = $("<figcaption class='article_content_list_right'></figcaption>"),
                         $p_name = $("<p class='p_name'>" + element["name"] + "</p>"),
                         $p_desc = element["pm_desc"] ? $("<p class='p_desc'><span>精选</span><span>" + element["pm_desc"] + "</span></p>") : $("<p class='p_desc'><span>精选</span></p>"),
@@ -26,6 +26,11 @@ define(["jquery"], function ($) {
                 });
                 $article.html("");
                 $article.append($article_content);
+                $("img.lazy").lazyload({
+                    // threshold: 200,
+                    event: "click",
+                    container: $(".article_content"),
+                });
             }
         });
     };

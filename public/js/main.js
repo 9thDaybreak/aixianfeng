@@ -7,6 +7,7 @@ require.config({
         "backbone": "../../lib/js/backbone",
         "text": "../../lib/js/text",
         "router": "router",
+        "lazyload": "../../lib/js/jquery.lazyload.min"
     }
 });
 
