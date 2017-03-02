@@ -77,7 +77,7 @@ body {
 }
 
 .swiper-slide {
-    background-size: contain;
+    background-size: cover;
 }
 
 .swiper-pagination {
