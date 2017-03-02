@@ -35,7 +35,7 @@
     height: auto;
 }
 
-.myHeader .num {
+.myHeader .num.num.num {
     color: #fff;
     font-size: 0.4444rem;
     padding-bottom: 0.2778rem;
@@ -46,7 +46,7 @@
     width: 2.7344rem;
     height: 1rem;
     color: #e64f1a;
-    background: url("../../public/img/logon.png") no-repeat;
+    background: url("./public/img/logon.png") no-repeat;
     background-size: 100%;
     line-height: 1rem;
     text-align: center;
@@ -58,7 +58,7 @@
 .myHeader .back {
     width: 0.4063rem;
     height: 0.6719rem;
-    background: url("../../public/img/right2.png") no-repeat;
+    background: url("./public/img/right2.png") no-repeat;
     background-size: 100%;
 }
 
@@ -85,7 +85,7 @@
     display: inline-block;
     width: 0.5938rem;
     height: 0.6406rem;
-    background: url("../../public/img/收藏_03.png") no-repeat;
+    background: url("./public/img/收藏_03.png") no-repeat;
     background-size: 100%;
     vertical-align: middle;
 }
@@ -94,7 +94,7 @@
     display: inline-block;
     width: 0.5938rem;
     height: 0.6406rem;
-    background: url("../../public/img/收藏_06.png") no-repeat;
+    background: url("./public/img/收藏_06.png") no-repeat;
     background-size: 100%;
     vertical-align: middle;
     background-position: 0 0.1111rem;
