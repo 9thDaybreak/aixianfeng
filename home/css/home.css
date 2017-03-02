@@ -156,6 +156,7 @@ body {
 .nav_logo {
     position: relative;
     width: 24%;
+    height: 100%;
 }
 
 .nav_logo:after {
