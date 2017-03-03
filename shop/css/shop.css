@@ -11,7 +11,7 @@
     top: 0;
     left: 0;
     box-sizing: border-box;
-    font-family: 微软雅黑;
+    z-index: 9999;
 }
 
 .shopPosition {
