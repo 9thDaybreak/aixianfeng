@@ -113,6 +113,7 @@ body {
     border-width: 0.6250rem 0.3438rem 0.6250rem 0.3438rem;
     position: absolute;
     right: -0.6876rem;
+    top: 0;
 }
 
 .ready p {

@@ -120,10 +120,8 @@ body {
     width: 7.625rem;
     height: 100%;
     background-color: #fff;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
     box-sizing: border-box;
-    padding: 1.2500rem 0 1.5625rem 0.1250rem;
+    padding-left: 0.1250rem;
     position: relative;
 }
 
@@ -134,9 +132,9 @@ body {
     padding: 0.3438rem 0;
     box-sizing: border-box;
     display: flex;
-    position: fixed;
+    position: absolute;
     z-index: 100;
-    top: 1.4375rem;
+    top: 0;
     left: 2.5rem;
     background-color: rgba(255, 255, 255, .9);
 }
@@ -164,12 +162,14 @@ body {
 
 .article_content {
     position: absolute;
-    padding-bottom: 1.5625rem;
     background-color: #ffffff;
     top: 0;
+    bottom: 0;
     width: 100%;
     z-index: 1;
-    padding-top: 1.2500rem;
+    padding: 1.2500rem 0 1.5625rem 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
 }
 
 .article_content li {
