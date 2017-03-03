@@ -217,7 +217,7 @@
     vertical-align: middle;
 }
 
-#main {
+.main {
     background-color: #efefef;
     position: absolute;
     top: 1.4063rem;
