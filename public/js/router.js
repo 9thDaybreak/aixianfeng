@@ -24,6 +24,7 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
             require(["text!../../foudre/foudre.html", "text!../../foudre/css/foudre.css", "./foudre/js/foudre.js"], function (html, css, obj) {
                 self.$main.html("<style>" + css + "</style>");
                 self.$main.append(html);
+                obj.init();
                 obj.reqData();
             });
         },
@@ -59,12 +60,12 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
     // 实例化
     let router = new setting();
     router.on("route", function (name) {
-        $(".home").css("background-image", "url('./public/img/home.png')");
-        $(".foudre").css("background-image", "url('./public/img/foudre.png')");
-        $(".order").css("background-image", "url('./public/img/order.png')");
-        $(".shop").css("background-image", "url('./public/img/shop.png')");
-        $(".my").css("background-image", "url('./public/img/my.png')");
-        $("." + name).css("background-image", "url('./public/img/" + name + "2.png')");
+        let $before = $("#b"),
+            $choice = $("." + name);
+        $before.attr("id", "a");
+        $before.css("background-image", "url('./public/img/" + $before.attr("class") + ".png')");
+        $choice.css("background-image", "url('./public/img/" + name + "2.png')");
+        $choice.attr("id", "b");
     });
     // 启动路由功能
     backbone.history.start();

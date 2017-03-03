@@ -2,12 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d54be08-bbc9-4e85-b404-20f7b3d48326" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/json/优选水果.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/json/天天特价.json" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/json/牛奶面包.json" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/lib/json/hotSell.json" afterPath="$PROJECT_DIR$/lib/json/热销榜.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foudre/css/foudre.css" afterPath="$PROJECT_DIR$/foudre/css/foudre.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/css/home.css" afterPath="$PROJECT_DIR$/home/css/home.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/home/css/seckill.css" afterPath="$PROJECT_DIR$/home/css/seckill.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/order/css/order.css" afterPath="$PROJECT_DIR$/order/css/order.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/shop/css/shop.css" afterPath="$PROJECT_DIR$/shop/css/shop.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/foudre/js/foudre.js" afterPath="$PROJECT_DIR$/foudre/js/foudre.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/js/router.js" afterPath="$PROJECT_DIR$/public/js/router.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,62 +28,47 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="foudre.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/foudre/js/foudre.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="71" column="57" lean-forward="true" selection-start-line="71" selection-start-column="57" selection-end-line="71" selection-end-column="57" />
+              <folding>
+                <element signature="e#126#1900#0" expanded="false" />
+                <element signature="e#285#1890#0" expanded="false" />
+                <element signature="e#1668#1874#0" expanded="false" />
+                <marker date="1488513606818" expanded="true" signature="537:933" ph="..." />
+                <marker date="1488513606818" expanded="true" signature="609:774" ph="..." />
+                <marker date="1488513606818" expanded="true" signature="854:931" ph="..." />
+                <marker date="1488513606818" expanded="true" signature="854:933" ph="..." />
+                <marker date="1488513606818" expanded="true" signature="1279:1285" ph=" " />
+                <marker date="1488513606818" expanded="true" signature="2830:3224" ph="..." />
+                <marker date="1488513606818" expanded="true" signature="2902:3067" ph="..." />
+                <marker date="1488513606818" expanded="false" signature="3147:3224" ph="..." />
+                <marker date="1488513606818" expanded="true" signature="3588:3594" ph=" " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="foudre.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/foudre/css/foudre.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="324">
-              <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
+              <caret line="171" column="26" lean-forward="false" selection-start-line="171" selection-start-column="26" selection-end-line="171" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="order.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/order/css/order.css">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="288">
-              <caret line="44" column="21" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="shop.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/shop/css/shop.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="233" column="14" lean-forward="false" selection-start-line="233" selection-start-column="14" selection-end-line="233" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="foudre.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/foudre/foudre.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="seckill.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/home/seckill.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="109">
-              <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="24" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="seckill.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/home/css/seckill.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
-              <folding />
+            <state relative-caret-position="164">
+              <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+              <folding>
+                <element signature="n#a#0;n#li#2;n#ul#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -91,10 +79,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Less File" />
-        <option value="tsconfig.json" />
         <option value="JavaScript File" />
         <option value="HTML File" />
         <option value="CSS File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -109,7 +97,6 @@
       <find>max-width</find>
       <find>listTotal</find>
       <find>article</find>
-      <find>article_content</find>
       <find>headline_content</find>
       <find>section</find>
       <find>overflow: scroll</find>
@@ -123,6 +110,8 @@
       <find>count</find>
       <find>overfl</find>
       <find>contentMid</find>
+      <find>left</find>
+      <find>article_content</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -148,9 +137,7 @@
         <option value="$PROJECT_DIR$/order/order.html" />
         <option value="$PROJECT_DIR$/public/js/main.js" />
         <option value="$PROJECT_DIR$/lib/js/jquery.lazyload.min.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/order/js/order.js" />
-        <option value="$PROJECT_DIR$/foudre/js/foudre.js" />
         <option value="$PROJECT_DIR$/lib/json/apimiaosha.json" />
         <option value="$PROJECT_DIR$/home/js/seckill.js" />
         <option value="$PROJECT_DIR$/home/seckill.html" />
@@ -158,16 +145,21 @@
         <option value="$PROJECT_DIR$/shop/shop.html" />
         <option value="$PROJECT_DIR$/home/home.html" />
         <option value="$PROJECT_DIR$/home/js/home.js" />
-        <option value="$PROJECT_DIR$/public/js/router.js" />
         <option value="$PROJECT_DIR$/my/integralMall.html" />
         <option value="$PROJECT_DIR$/my/my.html" />
         <option value="$PROJECT_DIR$/my/css/integralMall.css" />
         <option value="$PROJECT_DIR$/my/css/my.css" />
         <option value="$PROJECT_DIR$/home/css/home.css" />
-        <option value="$PROJECT_DIR$/foudre/css/foudre.css" />
         <option value="$PROJECT_DIR$/order/css/order.css" />
         <option value="$PROJECT_DIR$/shop/css/shop.css" />
         <option value="$PROJECT_DIR$/home/css/seckill.css" />
+        <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/lib/json/优选水果.json" />
+        <option value="$PROJECT_DIR$/lib/json/牛奶面包.json" />
+        <option value="$PROJECT_DIR$/public/js/router.js" />
+        <option value="$PROJECT_DIR$/lib/json/天天特价.json" />
+        <option value="$PROJECT_DIR$/foudre/css/foudre.css" />
+        <option value="$PROJECT_DIR$/foudre/js/foudre.js" />
       </list>
     </option>
   </component>
@@ -207,7 +199,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -230,7 +221,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
+              <option name="myItemId" value="foudre" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -244,7 +235,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="home" />
+              <option name="myItemId" value="foudre" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -255,6 +246,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -373,18 +365,19 @@
       <workItem from="1488348987463" duration="24793000" />
       <workItem from="1488417211973" duration="32285000" />
       <workItem from="1488466487769" duration="310000" />
-      <workItem from="1488506276136" duration="633000" />
+      <workItem from="1488506276136" duration="6272000" />
+      <workItem from="1488512998044" duration="611000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="119660000" />
+    <option name="totallyTimeSpent" value="125910000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24886535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20045386" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="LuaJ" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32876712" sideWeight="0.5030257" order="7" side_tool="true" content_ui="tabs" />
@@ -435,27 +428,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/foudre/css/foudre.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/css/home.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home/js/home.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="7" column="32" lean-forward="false" selection-start-line="7" selection-start-column="32" selection-end-line="7" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home/home.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -536,13 +508,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/json/hotSell.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="18432">
-          <caret line="512" column="0" lean-forward="false" selection-start-line="512" selection-start-column="0" selection-end-line="512" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/json/apiyuding.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="452">
@@ -583,13 +548,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="8604">
           <caret line="239" column="0" lean-forward="false" selection-start-line="239" selection-start-column="0" selection-end-line="239" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foudre/js/foudre.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="31" column="69" lean-forward="true" selection-start-line="29" selection-start-column="18" selection-end-line="31" selection-end-column="69" />
         </state>
       </provider>
     </entry>
@@ -635,13 +593,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/js/router.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="55" column="9" lean-forward="true" selection-start-line="55" selection-start-column="9" selection-end-line="55" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/my/integralMall.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
@@ -653,7 +604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-360">
           <caret line="62" column="21" lean-forward="false" selection-start-line="62" selection-start-column="21" selection-end-line="62" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -661,7 +611,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-484">
           <caret line="79" column="21" lean-forward="true" selection-start-line="79" selection-start-column="21" selection-end-line="79" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -669,7 +618,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -677,7 +625,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="3" column="24" lean-forward="false" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -685,53 +632,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="41" column="22" lean-forward="false" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="22" />
-          <folding>
-            <element signature="n#div#0;n#!!top" expanded="false" />
-            <element signature="n#div#1;n#!!top" expanded="false" />
-            <element signature="n#div#2;n#!!top" expanded="false" />
-            <element signature="n#div#3;n#!!top" expanded="false" />
-            <element signature="n#div#5;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foudre/css/foudre.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="57" column="21" lean-forward="false" selection-start-line="57" selection-start-column="21" selection-end-line="57" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/order/css/order.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="44" column="21" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="2" column="6" lean-forward="true" selection-start-line="2" selection-start-column="6" selection-end-line="2" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/shop/css/shop.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="233" column="14" lean-forward="false" selection-start-line="233" selection-start-column="14" selection-end-line="233" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/foudre/foudre.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -739,15 +639,108 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="109">
           <caret line="53" column="24" lean-forward="false" selection-start-line="53" selection-start-column="23" selection-end-line="53" selection-end-column="24" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/home/css/seckill.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="4" column="27" lean-forward="false" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+        <state relative-caret-position="180">
+          <caret line="5" column="24" lean-forward="true" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foudre/foudre.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/shop/css/shop.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="233" column="14" lean-forward="false" selection-start-line="233" selection-start-column="14" selection-end-line="233" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/order/css/order.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="44" column="21" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/json/热销榜.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2751">
+          <caret line="506" column="22" lean-forward="true" selection-start-line="506" selection-start-column="22" selection-end-line="506" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/json/牛奶面包.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3548">
+          <caret line="431" column="1" lean-forward="true" selection-start-line="431" selection-start-column="1" selection-end-line="431" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/js/router.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="67" column="29" lean-forward="false" selection-start-line="67" selection-start-column="29" selection-end-line="67" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/json/天天特价.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="175" column="1" lean-forward="false" selection-start-line="175" selection-start-column="1" selection-end-line="175" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/json/优选水果.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="6" column="16" lean-forward="false" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foudre/css/foudre.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="171" column="26" lean-forward="false" selection-start-line="171" selection-start-column="26" selection-end-line="171" selection-end-column="26" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="22" column="8" lean-forward="true" selection-start-line="22" selection-start-column="8" selection-end-line="22" selection-end-column="8" />
+          <folding>
+            <element signature="n#a#0;n#li#2;n#ul#0;n#footer#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/foudre/js/foudre.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="71" column="57" lean-forward="true" selection-start-line="71" selection-start-column="57" selection-end-line="71" selection-end-column="57" />
+          <folding>
+            <element signature="e#126#1900#0" expanded="false" />
+            <element signature="e#285#1890#0" expanded="false" />
+            <element signature="e#1668#1874#0" expanded="false" />
+            <marker date="1488513606818" expanded="true" signature="537:933" ph="..." />
+            <marker date="1488513606818" expanded="true" signature="609:774" ph="..." />
+            <marker date="1488513606818" expanded="true" signature="854:931" ph="..." />
+            <marker date="1488513606818" expanded="true" signature="854:933" ph="..." />
+            <marker date="1488513606818" expanded="true" signature="1279:1285" ph=" " />
+            <marker date="1488513606818" expanded="true" signature="2830:3224" ph="..." />
+            <marker date="1488513606818" expanded="true" signature="2902:3067" ph="..." />
+            <marker date="1488513606818" expanded="false" signature="3147:3224" ph="..." />
+            <marker date="1488513606818" expanded="true" signature="3588:3594" ph=" " />
+          </folding>
         </state>
       </provider>
     </entry>
