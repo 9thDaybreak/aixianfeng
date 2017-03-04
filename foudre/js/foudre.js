@@ -22,7 +22,7 @@ define(["jquery", "lazyload"], function ($) {
                         li3 = `<p class='p_specifics'>${element["specifics"]}</p>
                                <p class='p_num'><span class="price">¥${element["price"]}</span>&nbsp;<b class="market_price">¥${element["market_price"]}</b></p>
                                <div class="addOrSub">
-                                <i></i><span></span><i>+</i>
+                                <i></i><span></span><i></i>
                                </div>
                              </figcaption>
                            </figure>`;
@@ -76,7 +76,7 @@ define(["jquery", "lazyload"], function ($) {
                                         li3 = `<p class='p_specifics'>${element["specifics"]}</p>
                                                <p class='p_num'><span class="price">¥${element["price"]}</span>&nbsp;<b class="market_price">¥${element["market_price"]}</b></p>
                                                <div class="addOrSub">
-                                               <i></i><span></span><i>+</i>
+                                               <i></i><span></span><i></i>
                                                </div>
                                              </figcaption>
                                          </figure>`;
@@ -113,34 +113,33 @@ define(["jquery", "lazyload"], function ($) {
 
     function addShop($addOrSub) {
         $addOrSub.on("click", function (event) {
-            if (event.target != $addOrSub[0]) {
+            if (event.target !== this) {
                 let $sub = $(this).children().eq(0),
-                    $num = $(this).children().eq(1);
-                switch ($(event.target).html()) {
-                    case "+" :
-                        // 如果 span 是否为零
-                        if ($num.html() === "") {
-                            $(this).addClass("choice");
-                            $sub.eq(0).html("-");
-                            $num.html("1");
-                        } else {
-                            let value = +$num.html();
-                            $num.html(++value);
-                        }
-                        break;
-                    case "-" :
-                        // 如果 span 不为零
-                        if ($num.html() === "1") {
-                            $(this).removeClass("choice");
-                            $sub.html("");
-                            $num.html("");
-                        } else {
-                            let value = +$num.html();
-                            $num.html(--value);
-                        }
-                        break;
+                    $num = $(this).children().eq(1),
+                    $add = $(this).children().eq(2);
+                if (event.target === $add[0]) {
+                    // 如果 span 是否为零
+                    if ($num.html() === "") {
+                        $sub.css("display", "block");
+                        $add.css("background-image", "url('./public/img/add.png')");
+                        $num.html("1");
+                    } else {
+                        let value = +$num.html();
+                        $num.html(++value);
+                    }
+                }
+                if (event.target === $sub[0]) {
+                    if ($num.html() === "1") {
+                        $sub.css("display", "none");
+                        $add.css("background-image", "url('./public/img/add0.png')");
+                        $num.html("");
+                    } else {
+                        let value = +$num.html();
+                        $num.html(--value);
+                    }
                 }
             }
+            console.log($("." + "热销榜"));
         });
     }
 
