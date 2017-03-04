@@ -7,9 +7,13 @@ require.config({
         "backbone": "../../lib/js/backbone",
         "text": "../../lib/js/text",
         "router": "router",
-        "lazyload": "../../lib/js/jquery.lazyload.min"
+        "lazyload": "../../lib/js/jquery.lazyload.min",
+        "fastclick": "../../lib/js/fastclick"
     }
 });
 
-require(["flexible", "router"], function () {
+require(["jquery", "flexible", "router", "fastclick"], function ($, a, b, FastClick) {
+    $(function () {
+        FastClick.attach(document.body);
+    });
 });
