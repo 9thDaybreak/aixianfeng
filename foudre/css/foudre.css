@@ -266,10 +266,6 @@ body {
     font-size: 0.4rem;
 }
 
-.addOrSub i:nth-child(1) {
-    display: none;
-}
-
 .addOrSub i:nth-child(3) {
     height: 0.8750rem;
     width: 0.8750rem;
