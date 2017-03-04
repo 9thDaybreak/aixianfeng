@@ -139,7 +139,6 @@ define(["jquery", "lazyload"], function ($) {
                     }
                 }
             }
-            console.log($("." + "热销榜"));
         });
     }
 

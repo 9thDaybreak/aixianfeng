@@ -269,7 +269,7 @@ body {
 .addOrSub i:nth-child(1) {
     background: #ffffff url("./public/img/sub.png") center center no-repeat;
     background-size: 100%;
-    display: none;
+    /*display: none;*/
 }
 
 .addOrSub i:nth-child(3) {
