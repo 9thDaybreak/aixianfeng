@@ -120,7 +120,7 @@ define(["jquery", "lazyload"], function ($) {
                 if (event.target === $add[0]) {
                     // 如果 span 是否为零
                     if ($num.html() === "") {
-                        $sub.css("display", "block");
+                        $sub.css("visibility", "visible");
                         $add.css("background-image", "url('./public/img/add.png')");
                         $num.html("1");
                     } else {
@@ -130,7 +130,7 @@ define(["jquery", "lazyload"], function ($) {
                 }
                 if (event.target === $sub[0]) {
                     if ($num.html() === "1") {
-                        $sub.css("display", "none");
+                        $sub.css("visibility", "hidden");
                         $add.css("background-image", "url('./public/img/add0.png')");
                         $num.html("");
                     } else {
