@@ -1,5 +1,6 @@
 define(["jquery", "lazyload"], function ($) {
     let obj = {};
+    // 添加数据
     obj.reqData = function () {
         // 热销榜
         $.ajax({
@@ -36,11 +37,13 @@ define(["jquery", "lazyload"], function ($) {
                     container: $(".article_content"),  // 对某容器中的图片实现效果
                     placeholder: "./public/img/loding.jpg", //用图片提前占位
                 });
+                getLocalStorage("热销榜");
                 addShop($(".addOrSub"));
             }
         });
     };
 
+    // 点击左侧列表更改右侧列表数据
     obj.init = function () {
         let $asideUl = $(".aside ul");
         // 给 ul 添加事件托管
@@ -90,7 +93,8 @@ define(["jquery", "lazyload"], function ($) {
                                     container: $("." + text),  // 对某容器中的图片实现效果
                                     placeholder: "./public/img/loding.jpg", //用图片提前占位
                                 });
-                                addShop($("." + text));
+                                getLocalStorage(text);
+                                addShop($("." + text + " .addOrSub"));
                                 $(".article_content").css("display", "none");
                                 $("." + text).css("display", "block");
                             },
@@ -111,33 +115,69 @@ define(["jquery", "lazyload"], function ($) {
         });
     };
 
+    function getLocalStorage(text) {
+        // 加载时调用数据库
+        let storage = window.localStorage,
+            data = JSON.parse(storage.getItem(text));
+        for (let key in data) {
+            let addOrSub = $("." + text + " ." + key + " .addOrSub");
+            addOrSub.children().eq(0).css("visibility", "visible");
+            addOrSub.children().eq(1).html(data[key].num);
+            addOrSub.children().eq(2).css("background-image", "url('./public/img/add.png')");
+        }
+    }
+
+    // 给加号减号添加点击事件
     function addShop($addOrSub) {
         $addOrSub.on("click", function (event) {
             if (event.target !== this) {
                 let $sub = $(this).children().eq(0),
                     $num = $(this).children().eq(1),
-                    $add = $(this).children().eq(2);
+                    $add = $(this).children().eq(2),
+                    // 获取仓库
+                    storage = window.localStorage,
+                    // 类目名
+                    mark = $(this.parentNode.parentNode.parentNode.parentNode).attr("class").slice(16),
+                    // id
+                    id = $(this.parentNode.parentNode.parentNode).attr("class"),
+                    // 需要存储的数据
+                    name = this.parentNode.firstElementChild.innerHTML,
+                    price = this.previousElementSibling.firstElementChild.innerHTML,
+                    // 从本地获取到数据
+                    data = JSON.parse(storage.getItem(mark)) || {};
+                // 触发加号时的情况
                 if (event.target === $add[0]) {
                     // 如果 span 是否为零
                     if ($num.html() === "") {
                         $sub.css("visibility", "visible");
                         $add.css("background-image", "url('./public/img/add.png')");
                         $num.html("1");
+                        data[id] = {
+                            name: name,
+                            price: price,
+                            num: 1
+                        };
                     } else {
                         let value = +$num.html();
                         $num.html(++value);
+                        data[id].num++;
                     }
                 }
+                // 触发减号时的情况
                 if (event.target === $sub[0]) {
                     if ($num.html() === "1") {
                         $sub.css("visibility", "hidden");
                         $add.css("background-image", "url('./public/img/add0.png')");
                         $num.html("");
+                        delete data[id];
                     } else {
                         let value = +$num.html();
                         $num.html(--value);
+                        data[id].num--;
                     }
                 }
+                // 将修改后的数据存入服务器中
+                storage.setItem(mark, JSON.stringify(data));
             }
         });
     }

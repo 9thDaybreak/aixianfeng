@@ -24,8 +24,8 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
             require(["text!../../foudre/foudre.html", "text!../../foudre/css/foudre.css", "./foudre/js/foudre.js"], function (html, css, obj) {
                 self.$main.html("<style>" + css + "</style>");
                 self.$main.append(html);
-                obj.init();
                 obj.reqData();
+                obj.init();
             });
         },
         order: function () {
