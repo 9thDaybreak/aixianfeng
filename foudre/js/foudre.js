@@ -42,7 +42,6 @@ define(["jquery", "lazyload"], function ($) {
             }
         });
     };
-
     // 点击左侧列表更改右侧列表数据
     obj.init = function () {
         let $asideUl = $(".aside ul");

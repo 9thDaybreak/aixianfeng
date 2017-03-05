@@ -1,0 +1,114 @@
+body {
+    font: 16px/1.5 "Myriad Set Pro", "Lucida Grande", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif, 'Microsoft Yahei', Simsun;
+    width: 100%;
+    max-width: 10rem;
+    margin: 0 auto;
+}
+
+.main {
+    background-color: #eee;
+    padding-bottom: 1rem;
+    position: absolute;
+    top: 1.4063rem;
+    bottom: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+}
+
+header {
+    width: 100%;
+    height: 1.4063rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 0.3125rem;
+    background-color: #f9fafd;
+    padding: 0 .3rem 0 0.3rem;
+    box-sizing: border-box;
+}
+
+.searchRight {
+    display: flex;
+    align-items: center;
+}
+
+.back {
+    background: url("../../public/img/left.png") center center no-repeat;
+    background-size: 100%;
+    width: 0.6094rem;
+    height: 1.2rem;
+}
+
+.back a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+
+header input {
+    width: 6.2031rem;
+    height: 0.8594rem;
+    border-radius: 0.0781rem;
+    padding-left: 0.7344rem;
+    background: url("../../public/img/search.png") 0.1rem no-repeat;
+    background-size: 0.4219rem;
+    border: 1px solid #666;
+    font-size: 0.4444rem;
+}
+
+.search {
+    color: #666;
+    margin-left: .5rem;
+}
+
+.hotSearch {
+    width: 10rem;
+    height: 5.5625rem;
+    overflow: auto;
+    margin-top: 1rem;
+    padding-left: 0.2778rem;
+    box-sizing: border-box;
+}
+
+.title {
+    margin-left: 0.2778rem;
+    font-size: 0.5rem;
+}
+
+.item {
+    display: inline-block;
+    border-radius: 0.4688rem;
+    padding: 0 0.2778rem;
+    margin: 0.1389rem;
+    width: auto;
+    height: 1.0938rem;
+    line-height: 1.0938rem;
+    text-align: center;
+    border: 1px solid #666;
+    background-color: #fff;
+    font-size: 0.5rem;
+}
+
+.records {
+    width: 10rem;
+    min-height: 3.4375rem;
+    font-size: 0.5rem;
+    margin-top: 1rem;
+    box-sizing: border-box;
+    padding-left: 0.2778rem;
+}
+
+.clearRecords {
+    border: 1px solid #666;
+    width: 6.6406rem;
+    height: 1.3125rem;
+    color: #666;
+    text-align: center;
+    line-height: 1.3125rem;
+    font-size: 0.5rem;
+    margin: 0 auto;
+    border-radius: 0.1094rem;
+}

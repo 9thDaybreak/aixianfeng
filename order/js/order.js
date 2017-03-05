@@ -9,7 +9,7 @@ define(["jquery", "lazyload"], function ($) {
             success: function (data) {
                 let $main = $(".main");
                 data.product.map(function (element) {
-                    let $section = $("<section class='section'></section>"),
+                    let $section = $("<section class='section' id='" + element["id"] + "'></section>"),
                         $section_img = $("<div class='section_img'><img class='lazy' data-original='" + element["img"] + "' width='3.4375rem' height='3.4375rem'></div>"),
                         $shoppingCart = $("<div class='shoppingCart'></div>"),
                         $section_other;
@@ -27,8 +27,42 @@ define(["jquery", "lazyload"], function ($) {
                         placeholder: "./public/img/loding.jpg", //用图片提前占位
                     });
                 });
+                addShop($(".shoppingCart"));
             }
         });
     };
+
+    // 给购物号添加点击事件
+    function addShop($shoppingCart) {
+        $shoppingCart.on("click", function (event) {
+                // 获取仓库
+                let storage = window.localStorage,
+                    // 类目名
+                    mark = "新鲜预定",
+                    // id
+                    id = $(this.parentNode).attr("id"),
+                    // 需要存储的数据
+                    name = this.previousElementSibling.firstElementChild.innerHTML,
+                    price = this.previousElementSibling.lastElementChild.firstChild.nextSibling,
+                    img = $(this.previousElementSibling.previousElementSibling.firstChild).attr("data-original"),
+                    // 从本地获取到数据
+                    data = JSON.parse(storage.getItem(mark)) || {};
+                // 判断该类目是否存在
+                if (data[id]) {
+                    data[id].num++;
+                } else {
+                    data[id] = {
+                        name: name,
+                        price: price,
+                        img: img,
+                        num: 1
+                    };
+                }
+                // 将修改后的数据存入服务器中
+                storage.setItem(mark, JSON.stringify(data));
+            }
+        );
+    }
+
     return obj;
 });

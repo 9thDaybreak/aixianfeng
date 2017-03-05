@@ -18,10 +18,15 @@ body {
     z-index: 100;
 }
 
-.public_header > div {
-    height: 100%;
-    box-sizing: border-box;
+.search > div {
     padding: 0.9375rem 0.2rem 0;
+}
+
+.search {
+    text-decoration: none;
+    color: #000000;
+    display: block;
+    box-sizing: border-box;
     font-size: 0.25rem;
 }
 
