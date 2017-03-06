@@ -142,8 +142,11 @@ define(["jquery", "lazyload"], function ($) {
                     // 需要存储的数据
                     name = this.parentNode.firstElementChild.innerHTML,
                     price = this.previousElementSibling.firstElementChild.innerHTML,
+                    img = $(this.parentNode.previousElementSibling.firstElementChild).attr("data-original"),
                     // 从本地获取到数据
-                    data = JSON.parse(storage.getItem(mark)) || {};
+                    data = JSON.parse(storage.getItem(mark)) || {},
+                    $mark = $(".mark"),
+                    $markNum = +$mark.html();
                 // 触发加号时的情况
                 if (event.target === $add[0]) {
                     // 如果 span 是否为零
@@ -154,13 +157,15 @@ define(["jquery", "lazyload"], function ($) {
                         data[id] = {
                             name: name,
                             price: price,
-                            num: 1
+                            img: img,
+                            num: 1,
                         };
                     } else {
                         let value = +$num.html();
                         $num.html(++value);
                         data[id].num++;
                     }
+                    $mark.html(++$markNum);
                 }
                 // 触发减号时的情况
                 if (event.target === $sub[0]) {
@@ -174,6 +179,7 @@ define(["jquery", "lazyload"], function ($) {
                         $num.html(--value);
                         data[id].num--;
                     }
+                    $mark.html(--$markNum);
                 }
                 // 将修改后的数据存入服务器中
                 storage.setItem(mark, JSON.stringify(data));

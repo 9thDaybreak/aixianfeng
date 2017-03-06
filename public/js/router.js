@@ -61,11 +61,24 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
     let router = new setting();
     router.on("route", function (name) {
         let $before = $("#b"),
-            $choice = $("." + name);
+            $choice = $("." + name),
+            storage = window.localStorage,
+            num = 0,
+            $mark = $(".mark");
         $before.attr("id", "a");
         $before.css("background-image", "url('./public/img/" + $before.attr("class") + ".png')");
         $choice.css("background-image", "url('./public/img/" + name + "2.png')");
         $choice.attr("id", "b");
+        for (let key in storage) {
+            let temp = JSON.parse(storage.getItem(key));
+            for (let index in temp) {
+                num += +temp[index].num;
+            }
+        }
+        if (num !== 0) {
+            $mark.css("display", "flex");
+            $mark.html(num);
+        }
     });
     // 启动路由功能
     backbone.history.start();

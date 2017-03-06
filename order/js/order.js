@@ -46,7 +46,9 @@ define(["jquery", "lazyload"], function ($) {
                     price = this.previousElementSibling.lastElementChild.firstChild.nextSibling,
                     img = $(this.previousElementSibling.previousElementSibling.firstChild).attr("data-original"),
                     // 从本地获取到数据
-                    data = JSON.parse(storage.getItem(mark)) || {};
+                    data = JSON.parse(storage.getItem(mark)) || {},
+                    $mark = $(".mark"),
+                    $markNum = +$mark.html();
                 // 判断该类目是否存在
                 if (data[id]) {
                     data[id].num++;
@@ -58,6 +60,7 @@ define(["jquery", "lazyload"], function ($) {
                         num: 1
                     };
                 }
+                $mark.html(++$markNum);
                 // 将修改后的数据存入服务器中
                 storage.setItem(mark, JSON.stringify(data));
             }
