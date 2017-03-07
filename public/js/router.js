@@ -70,40 +70,6 @@ define(["jquery", "underscore", "backbone", "text", "async!mapAPI"], function ($
         }
     });
 
-    // 获取当前地址
-    (function () {alert("zhixing")
-        let geoLocation = new BMap.Geolocation();
-        geoLocation.getCurrentPosition(function (location) {
-            // 将经纬度逆运算
-            if (this.getStatus() == BMAP_STATUS_SUCCESS) {
-                let geoc = new BMap.Geocoder();
-                geoc.getLocation(location.point, function (rs) {
-                    let addComp = rs.addressComponents;
-                    $(".public_header > p").html("" + addComp.district + addComp.street + addComp.streetNumber);
-                    $(".loading").css("display", "none");
-                    Comp = addComp;
-                });
-            } else {
-                alert('failed' + this.getStatus());
-            }
-        });
-    })();
-
-    // 初始化购物车右上角的数目
-    (function () {
-        let storage = window.localStorage;
-        for (let key in storage) {
-            if (storage.getItem(key)[0] === "{") {
-                let classes = JSON.parse(storage.getItem(key));
-                for (let i in classes) {
-                    totalNumber += +classes[i].num;
-                }
-            }
-        }
-        if (totalNumber !== 0) {
-            $(".mark").css("display", "flex").html(totalNumber);
-        }
-    })();
     // 实例化
     let router = new setting();
     router.on("route", function (name) {
@@ -117,6 +83,42 @@ define(["jquery", "underscore", "backbone", "text", "async!mapAPI"], function ($
         $before.css("background-image", "url('./public/img/" + $before.attr("class") + ".png')");
         $choice.css("background-image", "url('./public/img/" + name + "2.png')");
         $choice.attr("id", "b");
+
+        // 获取当前地址
+        (function () {
+            alert("zhixing")
+            let geoLocation = new BMap.Geolocation();
+            geoLocation.getCurrentPosition(function (location) {
+                // 将经纬度逆运算
+                if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+                    let geoc = new BMap.Geocoder();
+                    geoc.getLocation(location.point, function (rs) {
+                        let addComp = rs.addressComponents;
+                        $(".public_header > p").html("" + addComp.district + addComp.street + addComp.streetNumber);
+                        $(".loading").css("display", "none");
+                        Comp = addComp;
+                    });
+                } else {
+                    alert('failed' + this.getStatus());
+                }
+            });
+        })();
+
+        // 初始化购物车右上角的数目
+        (function () {
+            let storage = window.localStorage;
+            for (let key in storage) {
+                if (storage.getItem(key)[0] === "{") {
+                    let classes = JSON.parse(storage.getItem(key));
+                    for (let i in classes) {
+                        totalNumber += +classes[i].num;
+                    }
+                }
+            }
+            if (totalNumber !== 0) {
+                $(".mark").css("display", "flex").html(totalNumber);
+            }
+        })();
     });
     // 启动路由功能
     backbone.history.start();
