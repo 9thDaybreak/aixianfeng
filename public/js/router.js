@@ -71,7 +71,7 @@ define(["jquery", "underscore", "backbone", "text", "async!mapAPI"], function ($
     });
 
     // 获取当前地址
-    (function () {
+    (function () {alert("zhixing")
         let geoLocation = new BMap.Geolocation();
         geoLocation.getCurrentPosition(function (location) {
             // 将经纬度逆运算
