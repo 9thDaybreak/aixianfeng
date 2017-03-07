@@ -75,13 +75,17 @@ define(["jquery", "underscore", "backbone", "text", "async!mapAPI"], function ($
         let geoLocation = new BMap.Geolocation();
         geoLocation.getCurrentPosition(function (location) {
             // 将经纬度逆运算
-            let geoc = new BMap.Geocoder();
-            geoc.getLocation(location.point, function (rs) {
-                let addComp = rs.addressComponents;
-                $(".public_header > p").html("" + addComp.district + addComp.street + addComp.streetNumber);
-                $(".loading").css("display", "none");
-                Comp = addComp;
-            });
+            if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+                let geoc = new BMap.Geocoder();
+                geoc.getLocation(location.point, function (rs) {
+                    let addComp = rs.addressComponents;
+                    $(".public_header > p").html("" + addComp.district + addComp.street + addComp.streetNumber);
+                    $(".loading").css("display", "none");
+                    Comp = addComp;
+                });
+            } else {
+                alert('failed' + this.getStatus());
+            }
         });
     })();
 
@@ -99,7 +103,6 @@ define(["jquery", "underscore", "backbone", "text", "async!mapAPI"], function ($
         if (totalNumber !== 0) {
             $(".mark").css("display", "flex").html(totalNumber);
         }
-
     })();
     // 实例化
     let router = new setting();
