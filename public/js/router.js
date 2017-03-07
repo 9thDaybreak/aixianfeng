@@ -70,26 +70,26 @@ define(["jquery", "underscore", "backbone", "text", "async!mapAPI"], function ($
         }
     });
     // 获取当前地址
-    (function () {
-        let geoLocation = new BMap.Geolocation();
-        geoLocation.getCurrentPosition(function (location) {
-            // 将经纬度逆运算
-            // if (this.getStatus() == BMAP_STATUS_SUCCESS) {
-            let geoc = new BMap.Geocoder();
-            geoc.getLocation(location.point, function (rs) {
-                let addComp = rs.addressComponents;
-                $(".public_header > p").html("" + addComp.district + addComp.street + addComp.streetNumber);
-                $(".loading").css("display", "none");
-                Comp = addComp;
-            });
+    // (function () {
+        // let geoLocation = new BMap.Geolocation();
+        // geoLocation.getCurrentPosition(function (location) {
+        //     // 将经纬度逆运算
+        //     // if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+        //     let geoc = new BMap.Geocoder();
+        //     geoc.getLocation(location.point, function (rs) {
+        //         let addComp = rs.addressComponents;
+        //         $(".public_header > p").html("" + addComp.district + addComp.street + addComp.streetNumber);
+        //         $(".loading").css("display", "none");
+                // Comp = addComp;
+            // });
             // }
             // else {
             //     alert('failed' + this.getStatus());
             //     $(".public_header > p").html("定位失败");
             //     $(".loading").css("display", "none");
             // }
-        });
-    })();
+        // });
+    // })();
 
     // 初始化购物车右上角的数目
     (function () {
