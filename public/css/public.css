@@ -12,20 +12,18 @@ a {
   right: 0;
   top: 0;
   bottom: 0;
-  display: none;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  z-index: 999999;
 }
 .loading > img {
   width: 50%;
-  position: relative;
-  top: 30%;
+  margin-top: 5rem;
 }
 .loading > p {
   text-align: center;
-  position: relative;
-  top: 40%;
+  margin-top: 2rem;
 }
 .public_footer {
   height: 1.5625rem;

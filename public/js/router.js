@@ -1,4 +1,6 @@
-define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
+define(["jquery", "underscore", "backbone", "text", "async!mapAPI"], function ($, _, backbone) {
+    let Comp = null,
+        totalNumber = 0;
     // 设置路由
     let setting = backbone.Router.extend({
         $main: $("#main"),
@@ -13,24 +15,30 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
         home: function () {
             // 导入 HTML 及 JS
             let self = this;
-            require(["text!../../home/home.html", "text!../../home/css/home.css", "./home/js/home.js"], function (html, css, obj) {
+            require(["text!../../home/home.html", "text!../../home/css/home.css", "./home/js/home.js", "async!mapAPI"], function (html, css, obj) {
                 self.$main.html("<style>" + css + "</style>");
                 self.$main.append(html);
                 obj.reqData();
+                if (Comp) {
+                    $(".public_header > p").html("" + Comp.district + Comp.street + Comp.streetNumber);
+                }
             });
         },
         foudre: function () {
             let self = this;
-            require(["text!../../foudre/foudre.html", "text!../../foudre/css/foudre.css", "./foudre/js/foudre.js"], function (html, css, obj) {
+            require(["text!../../foudre/foudre.html", "text!../../foudre/css/foudre.css", "./foudre/js/foudre.js", "async!mapAPI"], function (html, css, obj) {
                 self.$main.html("<style>" + css + "</style>");
                 self.$main.append(html);
                 obj.reqData();
                 obj.init();
+                if (Comp) {
+                    $(".public_header > p").html("" + Comp.district + Comp.street + Comp.streetNumber);
+                }
             });
         },
         order: function () {
             let self = this;
-            require(["text!../../order/order.html", "text!../../order/css/order.css", "./order/js/order.js"], function (html, css, obj) {
+            require(["text!../../order/order.html", "text!../../order/css/order.css", "./order/js/order.js", "async!mapAPI"], function (html, css, obj) {
                 self.$main.html("<style>" + css + "</style>");
                 self.$main.append(html);
                 obj.reqData();
@@ -38,13 +46,18 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
         },
         shop: function () {
             let self = this;
-            require(["text!../../shop/shop.html", "text!../../shop/css/shop.css", "./shop/js/shop.js"], function (html, css, obj) {
+            require(["text!../../shop/shop.html", "text!../../shop/css/shop.css", "./shop/js/shop.js", "async!mapAPI"], function (html, css, obj) {
                 self.$main.html("<style>" + css + "</style>");
                 self.$main.append(html);
+                obj.init();
+                if (Comp) {
+                    $(".public_header > p").html("" + Comp.district + Comp.street + Comp.streetNumber);
+                }
             });
-        }, my: function () {
+        },
+        my: function () {
             let self = this;
-            require(["text!../../my/my.html", "text!../../my/css/my.css"], function (html, css) {
+            require(["text!../../my/my.html", "text!../../my/css/my.css", "async!mapAPI"], function (html, css) {
                 self.$main.html("<style>" + css + "</style>");
                 self.$main.append(html);
             });
@@ -57,11 +70,43 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
         }
     });
 
+    // 获取当前地址
+    (function () {
+        let geoLocation = new BMap.Geolocation();
+        geoLocation.getCurrentPosition(function (location) {
+            // 将经纬度逆运算
+            let geoc = new BMap.Geocoder();
+            geoc.getLocation(location.point, function (rs) {
+                let addComp = rs.addressComponents;
+                $(".public_header > p").html("" + addComp.district + addComp.street + addComp.streetNumber);
+                $(".loading").css("display", "none");
+                Comp = addComp;
+            });
+        });
+    })();
+
+    // 初始化购物车右上角的数目
+    (function () {
+        let storage = window.localStorage;
+        for (let key in storage) {
+            if (storage.getItem(key)[0] === "{") {
+                let classes = JSON.parse(storage.getItem(key));
+                for (let i in classes) {
+                    totalNumber += +classes[i].num;
+                }
+            }
+        }
+        if (totalNumber !== 0) {
+            $(".mark").css("display", "flex").html(totalNumber);
+        }
+
+    })();
     // 实例化
     let router = new setting();
     router.on("route", function (name) {
         let $before = $("#b"),
             $choice = $("." + name),
+            $public_header = $(".public_header>p"),
             storage = window.localStorage,
             num = 0,
             $mark = $(".mark");
@@ -69,16 +114,6 @@ define(["jquery", "underscore", "backbone", "text"], function ($, _, backbone) {
         $before.css("background-image", "url('./public/img/" + $before.attr("class") + ".png')");
         $choice.css("background-image", "url('./public/img/" + name + "2.png')");
         $choice.attr("id", "b");
-        for (let key in storage) {
-            let temp = JSON.parse(storage.getItem(key));
-            for (let index in temp) {
-                num += +temp[index].num;
-            }
-        }
-        if (num !== 0) {
-            $mark.css("display", "flex");
-            $mark.html(num);
-        }
     });
     // 启动路由功能
     backbone.history.start();

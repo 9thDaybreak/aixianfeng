@@ -9,17 +9,11 @@ body {
     height: 1.4375rem;
     width: 100%;
     background-color: #ffd600;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    text-align: center;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 100;
-}
-
-.search > div {
-    padding: 0.9375rem 0.2rem 0;
 }
 
 .search {
@@ -28,17 +22,25 @@ body {
     display: block;
     box-sizing: border-box;
     font-size: 0.25rem;
+    float: right;
 }
 
 .header_search {
+    height: 1.4375rem;
+    padding: 1rem .3rem 0;
+    box-sizing: border-box;
     background: url("./public/img/header_search.png") center 0.25rem no-repeat;
     background-size: 0.6250rem;
+    position: absolute;
+    right: 0;
 }
 
 .public_header > p {
     font-weight: 400;
     font-size: 0.4063rem;
+    line-height: 1.4375rem;
     position: relative;
+    display: inline-block;
 }
 
 .public_header > p:after {
@@ -49,7 +51,7 @@ body {
     border-width: 0.2813rem 0.1250rem;
     border-style: solid;
     position: absolute;
-    top: 0.2rem;
+    top: 0.58rem;
     right: -0.3125rem;
 }
 

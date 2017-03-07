@@ -43,7 +43,7 @@ define(["jquery", "lazyload"], function ($) {
                     id = $(this.parentNode).attr("id"),
                     // 需要存储的数据
                     name = this.previousElementSibling.firstElementChild.innerHTML,
-                    price = this.previousElementSibling.lastElementChild.firstChild.nextSibling,
+                    price = "¥" + this.previousElementSibling.lastElementChild.firstChild.nextSibling.nodeValue,
                     img = $(this.previousElementSibling.previousElementSibling.firstChild).attr("data-original"),
                     // 从本地获取到数据
                     data = JSON.parse(storage.getItem(mark)) || {},
@@ -57,10 +57,16 @@ define(["jquery", "lazyload"], function ($) {
                         name: name,
                         price: price,
                         img: img,
+                        mark: mark,
+                        id: id,
                         num: 1
                     };
                 }
-                $mark.html(++$markNum);
+                if ($mark.html() === "") {
+                    $mark.css("display", "flex").html("1");
+                } else {
+                    $mark.html(++$markNum);
+                }
                 // 将修改后的数据存入服务器中
                 storage.setItem(mark, JSON.stringify(data));
             }

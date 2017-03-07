@@ -161,6 +161,7 @@
     position: relative;
     bottom: -0.3rem;
     display: flex;
+    justify-content: space-between;
 }
 
 .shopChioce .count b {
@@ -179,7 +180,6 @@
 .shopChioce .num {
     font-size: 0.6250rem;
     vertical-align: middle;
-    padding: 0 0.2656rem;
 }
 
 .shopDownOrder {

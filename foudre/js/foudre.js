@@ -158,6 +158,8 @@ define(["jquery", "lazyload"], function ($) {
                             name: name,
                             price: price,
                             img: img,
+                            mark: mark,
+                            id: id,
                             num: 1,
                         };
                     } else {
@@ -165,7 +167,11 @@ define(["jquery", "lazyload"], function ($) {
                         $num.html(++value);
                         data[id].num++;
                     }
-                    $mark.html(++$markNum);
+                    if ($mark.html() === "") {
+                        $mark.css("display", "flex").html("1");
+                    } else {
+                        $mark.html(++$markNum);
+                    }
                 }
                 // 触发减号时的情况
                 if (event.target === $sub[0]) {
@@ -179,7 +185,11 @@ define(["jquery", "lazyload"], function ($) {
                         $num.html(--value);
                         data[id].num--;
                     }
-                    $mark.html(--$markNum);
+                    if ($markNum === 1) {
+                        $mark.css("display", "none").html("");
+                    } else {
+                        $mark.html(--$markNum);
+                    }
                 }
                 // 将修改后的数据存入服务器中
                 storage.setItem(mark, JSON.stringify(data));
