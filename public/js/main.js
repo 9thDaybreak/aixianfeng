@@ -10,7 +10,7 @@ require.config({
         "lazyload": "../../lib/js/jquery.lazyload.min",
         "fastclick": "../../lib/js/fastclick",
         "async": "../../lib/js/async",
-        "mapAPI": "http://api.map.baidu.com/api?v=2.0&ak=62jRH2Ecr3p3vPuAouZl1shKo0toyOxG"
+        "mapAPI": "https://api.map.baidu.com/api?v=2.0&ak=62jRH2Ecr3p3vPuAouZl1shKo0toyOxG&s=1"
     }
 });
 
