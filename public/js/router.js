@@ -74,17 +74,20 @@ define(["jquery", "underscore", "backbone", "text", "async!mapAPI"], function ($
         let geoLocation = new BMap.Geolocation();
         geoLocation.getCurrentPosition(function (location) {
             // 将经纬度逆运算
-            if (this.getStatus() == BMAP_STATUS_SUCCESS) {
-                let geoc = new BMap.Geocoder();
-                geoc.getLocation(location.point, function (rs) {
-                    let addComp = rs.addressComponents;
-                    $(".public_header > p").html("" + addComp.district + addComp.street + addComp.streetNumber);
-                    $(".loading").css("display", "none");
-                    Comp = addComp;
-                });
-            } else {
-                alert('failed' + this.getStatus());
-            }
+            // if (this.getStatus() == BMAP_STATUS_SUCCESS) {
+            let geoc = new BMap.Geocoder();
+            geoc.getLocation(location.point, function (rs) {
+                let addComp = rs.addressComponents;
+                $(".public_header > p").html("" + addComp.district + addComp.street + addComp.streetNumber);
+                $(".loading").css("display", "none");
+                Comp = addComp;
+            });
+            // }
+            // else {
+            //     alert('failed' + this.getStatus());
+            //     $(".public_header > p").html("定位失败");
+            //     $(".loading").css("display", "none");
+            // }
         });
     })();
 
